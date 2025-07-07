@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background-color: white;*/
+    background-color: #f9f9f9;
+    background-image: radial-gradient(#e0e0e0 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.borderLine {
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+
+.box {
+    position: relative;
+    background-color: rgba(245, 245, 245, 0.56);
+    width: 350px;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box form {
+    position: absolute;
+    inset: 4px;
+    background-color: rgba(245, 245, 245, 0.149);
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.box form:hover {
+    border: solid 2px palevioletred;
+}
+
+.box form h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.box form h2:hover {
+    font-size: 30px;
+    color: #555;
+}
+
+.inputBox {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px 10px 10px 35px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: transparent;
+    font-size: 16px;
+}
+
+.inputBox .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    pointer-events: none;
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 90%;
+        height: auto;
+    }
+
+    .box form {
+        padding: 30px 20px;
+    }
+
+    .signin a {
+        font-size: 14px;
+    }
+
+    .inputBox input {
+        font-size: 14px;
+    }
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #2196F3; 
+}
+
+.remember-me label:hover {
+    cursor: pointer;
+    color: #555;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.links a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.signin a {
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: black;
+    text-decoration: none;
+}
+
+.google {
+    border: solid 2px #db4437;
+}
+
+.google:hover {
+    color: #DB4437;
+}
+
+.facebook {
+    border: solid 2px #3b5998;
+}
+
+.facebook:hover {
+    color: #1877F2;
+}
+
+.instagram {
+    border: solid 2px #e1306c;
+}
+
+.instagram:hover {
+    color: #C13584;
+}
+
+.signin a:hover {
+    opacity: 0.9;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border: none;
+    background-color: #2196F3;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #1976D2;
+}
+
